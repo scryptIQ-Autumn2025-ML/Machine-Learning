@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/android-chrome-512x512.png">
+    
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href=../assets/colours.css>
+    <link rel="stylesheet" href="../assets/shared-styles.css">
+    <link rel="stylesheet" href="../assets/module_card.css">
+    
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2D - ML1 - Glossary</title>
+    
+    <style>
+        /* Override sidebar styling since we're not using it */
+        body {
+            background-color: var(--background) !important;
+            color: var(--text-primary);
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: flex-start !important;
+            flex-direction: column !important;
+        }
+
+        .main-content {
+            width: 100% !important;
+            max-width: 1200px !important;
+            padding: 0 20px !important;
+            box-sizing: border-box !important;
+            margin: 0 auto !important;
+            position: relative !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+        }
+
+        /* Additional centering overrides */
+        #main-content {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: left !important;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo-container img {
+            width: clamp(60px, 10vw, 120px);
+            height: clamp(60px, 10vw, 120px);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .glossary-entry {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .glossary-entry:last-child {
+            border-bottom: none;
+        }
+
+        .glossary-term {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--remember);
+            margin-bottom: 8px;
+        }
+
+        .glossary-definition {
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .logo-container img {
+                height: 60px;
+            }
+            
+            .glossary-term {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content" class="main-content">
+        <div class="top-navbar">
+            <div class="logo-container">
+                <h1 class="page-title">Machine Learning 1 - Glossary</h1>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                Glossary <span class="module-tag">ML1</span>
+            </div>
+            <div class="module-body">
+                
+                <div class="glossary-entry">
+                    <strong>Random Forest Classifier</strong>: An ensemble learning method that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve predictive accuracy and control over-fitting.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Decision Tree</strong>: A non-parametric supervised learning method used for classification and regression that predicts the value of a target variable by learning simple decision rules inferred from the data features.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Ensemble Learning</strong>: A machine learning technique that combines the predictions from multiple models to create a more accurate and robust prediction.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Averaging Methods</strong>: Build estimators independently and average their predictions (e.g., Random Forest).
+                </div>
+                <div class="glossary-entry">
+                    <strong>Boosting Methods</strong>: Build estimators sequentially, where each new model attempts to correct the errors of the previous ones (e.g., Gradient Boosting).
+                </div>
+                <div class="glossary-entry">
+                    <strong>State Space</strong>: The set of all possible configurations of a system. In classification visualisation, this often refers to the coordinate grid of all possible feature value combinations used to visualise decision boundaries.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Prediction Probability</strong>: The confidence score (between 0 and 1) assigned by the model to a prediction, indicating the likelihood that a sample belongs to a specific class.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Feature Importance</strong>: A score indicating how useful or valuable each feature was to the model in making predictions.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Over-fitting</strong>: A modelling error that occurs when a function is too closely fit to a limited set of data points. An over-fitted model captures noise rather than the underlying pattern, performing well on training data but poorly on test data.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Stratified Shuffle Split</strong>: A cross-validation object that returns stratified randomised folds. It creates splits of data into training and test sets while preserving the percentage of samples for each class (stratification).
+                </div>
+                <div class="glossary-entry">
+                    <strong>ROC Curve (Receiver Operating Characteristic)</strong>: A graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. It plots the true positive rate against the false positive rate.
+                </div>
+                <div class="glossary-entry">
+                    <strong>AUC (Area Under the Curve)</strong>: The computed area under the ROC curve. It represents the degree of separability or performance of the classifier; an AUC of 1.0 represents a perfect model, while 0.5 represents a model with no discrimination capacity (random guess).
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>© Built with parchmentIQ copyright of scryptIQ</div>
+            <div>© L2D is copyright UCL 2025</div>
+        </div>
+    </div>
+</body>
+</html>
+        
