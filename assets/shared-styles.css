@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Pixelify+Sans&display=swap');
+
 /* L2D Azure AI Theme - Shared Styles */
+
 /* Base Styles */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Segoe UI", "Open Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--background);
     color: var(--text-primary);
     margin: 0;
@@ -65,9 +68,14 @@ body {
     cursor: pointer;
     transition: color 0.2s, transform 0.1s;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 1000;
     white-space: nowrap;
+}
+
+.scryptiq-button {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 30px;
 }
 
 .text-button:hover {

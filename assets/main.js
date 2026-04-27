@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const footerHTML = `
         <div class="footer">
             <div>© Built with parchmentIQ copyright of scryptIQ 2026</div>
-            <div>© L2D is copyright UCL 2026</div>
+            <div>© all materials are copyright of scryptIQ 2026</div>
         </div>
     `;
 

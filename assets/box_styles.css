@@ -9,7 +9,7 @@
     background-color: var(--card-bg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    font-family: "Segoe UI", "Open Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .info-box .box-title {

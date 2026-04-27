@@ -1,18 +1,18 @@
 /* ScryptIQ Theme - Color Palette */
 :root {
     /* Primary Brand Colours */
-    --primary: #f02698;
-    --primary-dark: #4d0c2e;
+    --primary: #EC619F;
+    --primary-dark: #761c4a;
     --secondary: #e07a5f;
-    --secondary-dark: #a85441;
-    --third-light: #7f84aa;
-    --third: #3d405b;
-    --third-dark: #2a2d3f;
+    --secondary-dark: #9c412d;
+    --third-light: #5a5f85;
+    --third: #3D405B;
+    --third-dark: #2b2d3f;
 
     --accent: #00b7c3;
 
     /* Background Colours */
-    --background: #f3f0ddff;
+    --background: #F4F1DE;
     --card-bg: #ffffff;
     --border: #e2e8f0;
 
@@ -33,11 +33,11 @@
     --important: #e46816;
 
     /* Homepage Colours */
-    --main-text: #f3f0ddff;
-    --main-background: #f3f0ddff;
-    --module-cards: #3d405b;
-    --module-cards-dark: #2a2d3f;
-    --about-us-text: #3d405b;
+    --main-text: #F4F1DE;
+    --main-background: #F4F1DE;
+    --module-cards: #3D405B;
+    --module-cards-dark: #2b2d3f;
+    --about-us-text: #3D405B;
     --start-gradient: #e07a5f;
-    --end-gradient: #f02698;
+    --end-gradient: #EC619F;
 }
