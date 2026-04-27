@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/android-chrome-512x512.png">
+    
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href=../assets/colours-l2d.css>
+    <link rel="stylesheet" href="../assets/shared-styles.css">
+    <link rel="stylesheet" href="../assets/module_card.css">
+    
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scryptIQ - ML2 - Glossary</title>
+    
+    <style>
+        /* Override sidebar styling since we're not using it */
+        body {
+            background-color: var(--background) !important;
+            color: var(--text-primary);
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: flex-start !important;
+            flex-direction: column !important;
+        }
+
+        .main-content {
+            width: 100% !important;
+            max-width: 1200px !important;
+            padding: 0 20px !important;
+            box-sizing: border-box !important;
+            margin: 0 auto !important;
+            position: relative !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+        }
+
+        /* Additional centering overrides */
+        #main-content {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: left !important;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo-container img {
+            width: clamp(60px, 10vw, 120px);
+            height: clamp(60px, 10vw, 120px);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .glossary-entry {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .glossary-entry:last-child {
+            border-bottom: none;
+        }
+
+        .glossary-term {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--remember);
+            margin-bottom: 8px;
+        }
+
+        .glossary-definition {
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .logo-container img {
+                height: 60px;
+            }
+            
+            .glossary-term {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content" class="main-content">
+        <div class="top-navbar">
+            <div class="logo-container">
+                <h1 class="page-title">Machine Learning 2 - Glossary</h1>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                Glossary <span class="module-tag">ML2</span>
+            </div>
+            <div class="module-body">
+                
+                <div class="glossary-entry">
+                    <strong>Accuracy</strong>: The proportion of correct predictions made by a classifier across all samples. While intuitive, accuracy can be misleading for imbalanced datasets and should not be used in isolation.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Class Imbalance</strong>: A situation where one class occurs much more frequently than another. Class imbalance can bias classifiers and distort evaluation metrics such as accuracy.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Confusion Matrix</strong>: A tabular summary of classification outcomes showing true positives, true negatives, false positives, and false negatives. It provides a detailed view of where a model is making errors.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Decision Boundary</strong>: The surface in feature space that separates different predicted classes. Decision boundaries help visualise how a classifier partitions the data.
+                </div>
+                <div class="glossary-entry">
+                    <strong>F1 Score</strong>: A single metric that combines precision and recall using their harmonic mean. It is particularly useful when false positives and false negatives are both important.
+                </div>
+                <div class="glossary-entry">
+                    <strong>False Negative</strong>: A case where the model incorrectly predicts the negative class when the true label is positive. False negatives are especially critical in medical and biological applications.
+                </div>
+                <div class="glossary-entry">
+                    <strong>False Positive</strong>: A case where the model incorrectly predicts the positive class when the true label is negative. High false positive rates can lead to misleading conclusions.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Hyperparameter</strong>: A configuration value set before training that controls how a model learns, such as regularisation strength or kernel parameters. Hyperparameters differ from learned model parameters.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Model Refinement</strong>: The iterative process of improving model performance through techniques such as normalisation, hyperparameter tuning, and repeated evaluation.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Normalisation</strong>: A preprocessing step that rescales features so they contribute comparably during training. Normalisation can significantly affect distance-based and optimisation-based models.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Permutation Test</strong>: A statistical method that evaluates whether a model’s performance is better than chance by repeatedly shuffling labels and retraining the model.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Permutation Test Score</strong>: The distribution of scores obtained from permuted labels, used to assess the statistical significance of a classifier’s observed performance.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Precision</strong>: The proportion of positive predictions that are correct. Precision reflects how reliable positive predictions are.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Recall (Sensitivity)</strong>: The proportion of true positive samples that are correctly identified. Recall measures a model’s ability to detect positive cases.
+                </div>
+                <div class="glossary-entry">
+                    <strong>ROC Curve (Receiver Operating Characteristic Curve)</strong>: A curve showing the trade-off between true positive rate and false positive rate across different decision thresholds.
+                </div>
+                <div class="glossary-entry">
+                    <strong>ROC AUC (Area Under the Curve)</strong>: A scalar summary of the ROC curve representing the probability that a randomly chosen positive sample is ranked higher than a negative one.
+                </div>
+                <div class="glossary-entry">
+                    <strong>State-Space Visualisation</strong>: A visualisation technique where predictions are made across a grid of feature values to reveal classifier behaviour across the entire feature space.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Statistical Significance (Model Performance)</strong>: An assessment of whether observed model performance is unlikely to have arisen by chance, often evaluated using permutation testing.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Threshold</strong>: A decision value applied to model scores or probabilities that determines class assignment. Changing the threshold alters precision-recall trade-offs.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Train–Test Split</strong>: A data partitioning strategy that separates training data from evaluation data to provide an unbiased estimate of model performance.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Toy Dataset</strong>: A synthetic dataset designed for controlled experimentation and visualisation. Toy datasets are useful for learning but should not be over-interpreted.
+                </div>
+                <div class="glossary-entry">
+                    <strong>True Negative</strong>: A case where the model correctly predicts the negative class.
+                </div>
+                <div class="glossary-entry">
+                    <strong>True Positive</strong>: A case where the model correctly predicts the positive class.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>© Built with parchmentIQ copyright of scryptIQ</div>
+            <div>© all materials are copyright of scryptIQ 2026</div>
+        </div>
+    </div>
+</body>
+</html>
+        
